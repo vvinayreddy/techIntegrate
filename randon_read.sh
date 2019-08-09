@@ -48,6 +48,8 @@ iostat -x 5 1000 >> iostat_$1_90R10W_"$i"QD_"$j"Jobs_$hn.log &
 
 top -b -d 5 >> top_$1_90R10W_"$i"QD_"$j"Jobs_$hn.log &
 
+this ramraj testing hello
+
 /usr/bin/fio --name=RandomReadWriteTest --rw=randrw --rwmixwrite=10 --bs=$1 --invalidate=1 --direct=1 --filename=$fileNames  --group_reporting --time_based --runtime=$2 --ioengine=libaio --numjobs=$j --iodepth=$i --norandommap --randrepeat=0 --exitall --output-format=json --output=fiotest_$1_90R10W_"$i"QD_"$j"Jobs_$hn.json
 pkill top 
 pkill sar
