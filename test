@@ -1,6 +1,10 @@
 Hello world
+<<<<<<< HEAD
 
 This is Rama Raju Konuganti. We will be using this test file to learn how to commit, pull request and merge.
 
 Thanks,
 Raj
+=======
+this is the test message from vinay
+>>>>>>> f50a4462541dc9b05efa5f96c6a6b843f54e0976
